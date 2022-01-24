@@ -1,0 +1,17 @@
+1. Configure Dcm Dsl protocol ID to be over CAN and configure the protocol priority.
+2. Configure the service table.
+3. activate the operation cycle in DEM.
+4. create and configure an event for voltage monitoring, and refernence what needed for configration
+    - DTC reference
+    - Operation Cycle reference
+    - Freeze Frame Class reference, etc.
+5. configure the failure threshold=4 in event debouncing configrations and othe debouncing configrations: 
+    - FDC INC. step size
+    - FDC DEC. step size
+    - passed threshold
+    - jump down
+    - jump up
+    - confirmed threshold, etc.
+6. configure freeze frame for temperature( define the DID and Data Element)
+7. configure a DTC= 0x777919
+8. Reference the DTC in the voltage monitoring event as mentioned in step 4
